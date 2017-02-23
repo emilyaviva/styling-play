@@ -1,11 +1,13 @@
 body {
-  background-color: #a9a9a9;
+  background-color: #eaeaea;
   width: 1200px;
+  margin: 0 auto;
 }
 
 .site-card {
   background-color: #ededed;
   margin: 100px 200px;
+  box-shadow: 0 0 0 1px #777, 0 0 0 6px #fff, 0 0 0 7px #777;
 }
 
 .site-header {
