@@ -7,7 +7,7 @@ body {
 .site-card {
   background-color: #ededed;
   margin: 100px 200px;
-  box-shadow: 0 0 0 1px #777, 0 0 0 6px #fff, 0 0 0 7px #777;
+  box-shadow: 0 0 0 1px #777, 0 0 0 6px #fff, 0 0 0 6.7px #777, 1px 3px 8px 8.7px rgba(18,18,18,0.63);
 }
 
 .site-header {
@@ -53,4 +53,10 @@ main .page-header .page-published {
 .site-footer {
   background-color: #289a7e;
   padding: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.site-footer .site-footer-item {
+  margin: 0 6px;
 }
