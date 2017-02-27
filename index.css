@@ -1,17 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Francois+One|Roboto:400,400i,700,700i");
 body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   background-color: #eaeaea;
   width: 1200px;
   margin: 0 auto; }
 
 .site-card {
-  background-color: #e0e0e0;
+  background-color: #f4f4f4;
   margin: 100px 200px;
   box-shadow: 0 0 0 1px #777777, 0 0 0 6px #ffffff, 0 0 0 6.7px #777777, 1px 3px 8px 8.7px rgba(18, 18, 18, 0.63); }
 
 .site-header {
+  font-family: "Francois One", Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-between;
-  background-color: #ea17bc;
+  background-color: #afd9ed;
+  border-bottom: 12px solid #e7b3dc;
   padding: 5px;
   align-items: center; }
   .site-header .site-title {
@@ -21,24 +25,35 @@ body {
     list-style-type: none; }
     .site-header .site-links ul li {
       display: inline;
-      margin-right: 20px; }
+      margin-right: 20px;
+      padding: 9px 12px;
+      border: 0.6px solid #777777;
+      border-radius: 4px;
+      background-color: #eaeaea; }
+      .site-header .site-links ul li:hover {
+        background-color: #1d6080;
+        color: #eaeaea; }
 
 main {
   padding: 36px; }
   main .page-header {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    font-family: "Francois One", Arial, Helvetica, sans-serif; }
     main .page-header .page-title {
-      font-size: 32px;
-      font-weight: bold; }
+      font-size: 32px; }
     main .page-header .page-published {
       font-size: 14px;
       font-weight: normal; }
 
 .site-footer {
-  background-color: #289a7e;
+  font-family: "Francois One", Arial, Helvetica, sans-serif;
+  background-color: #afd9ed;
+  border-top: 12px solid #e7b3dc;
   padding: 12px;
   display: flex;
   justify-content: center; }
   .site-footer .site-footer-item {
     margin: 0 6px; }
+
+/*# sourceMappingURL=index.css.map */

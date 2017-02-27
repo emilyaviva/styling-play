@@ -1,26 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One|Roboto:400,400i,700,700i')
+
+$header-font: 'Francois One', Arial, Helvetica, sans-serif
+$body-font: 'Roboto', Arial, Helvetica, sans-serif
+
 $offwhite: #eaeaea
 $shadowgrey: #777777
 $white: #ffffff
-$header: #ea17bc
-$footer: #289a7e
+$tcolor1: #afd9ed
+$tcolor2: #e7b3dc
 
 =spreadout()
   display: flex
   justify-content: space-between
 
 body
+  font-family: $body-font
   background-color: $offwhite
   width: 1200px
   margin: 0 auto
 
 .site-card
-  background-color: darken($offwhite, 4%)
+  background-color: lighten($offwhite, 4%)
   margin: 100px 200px
   box-shadow: 0 0 0 1px $shadowgrey, 0 0 0 6px $white, 0 0 0 6.7px $shadowgrey, 1px 3px 8px 8.7px rgba(18,18,18,0.63)
 
 .site-header
+  font-family: $header-font
   +spreadout
-  background-color: $header
+  background-color: $tcolor1
+  border-bottom: 12px solid $tcolor2
   padding: 5px
   align-items: center
   .site-title
@@ -32,22 +40,30 @@ body
       li
         display: inline
         margin-right: 20px
+        padding: 9px 12px
+        border: 0.6px solid $shadowgrey
+        border-radius: 4px
+        background-color: $offwhite
+        &:hover
+          background-color: darken($tcolor1, 50%)
+          color: $offwhite
 
 main
   padding: 36px
   .page-header
     +spreadout
+    font-family: $header-font
     .page-title
-      font:
-        size: 32px
-        weight: bold
+      font-size: 32px
     .page-published
       font:
         size: 14px
         weight: normal
 
 .site-footer
-  background-color: $footer
+  font-family: $header-font
+  background-color: $tcolor1
+  border-top: 12px solid $tcolor2
   padding: 12px
   display: flex
   justify-content: center
